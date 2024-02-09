@@ -1,4 +1,15 @@
-<h1>Аутентификация</h1>
-<div class="button">
-    {{> Button name="signin" type="submit" label="фывародлфырваодл"}}
+<div class="form-container">
+    <form action="#" class="login">
+        <div class="form-container__title">
+            <h1>Вход</h1>
+        </div>
+        <div class="form-container__inputs">
+            {{> Input id="login" label="Логин" type="text" placeholder="Логин" }}
+            {{> Input id="password" label="Пароль" type="password" placeholder="Пароль" }}
+        </div>
+        <div class="form-container__actions">
+            {{> Button name="auth" type="submit" label="Войти" }}
+            {{> Refs href="#" text="Нет аккаунта?" page="reg" }}
+        </div>
+    </form>
 </div>

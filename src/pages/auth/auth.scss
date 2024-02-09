@@ -1,0 +1,29 @@
+.form-container {
+  position: relative;
+  margin: 10% auto;
+  box-sizing: border-box;
+  width: 340px;
+  height: 450px;
+  border-radius: 12px;
+  box-shadow: 0 0 6px 0 #00000024;
+  padding: 20px;
+  &__title {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: center;
+    padding: 15% 0;
+  }
+  &__actions {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+
+
+
+
