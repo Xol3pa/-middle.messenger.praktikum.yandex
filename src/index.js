@@ -10,6 +10,7 @@ Object.entries(Components).forEach(([name, template]) => {
 const pages = {
     'auth': Pages.AuthPage,
     'reg': Pages.RegPage,
+    'messenger': Pages.MessengerPage,
 }
 
 function navigate(page) {

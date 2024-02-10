@@ -1,3 +1,20 @@
-<form action="#">
-    <h2>hello world</h2>
-</form>
+<div class="container-reg">
+    <form action="#" class="container-reg__reg">
+        <div class="container-reg__title">
+            <h1>Регистрация</h1>
+        </div>
+        <div class="container-reg__inputs">
+            {{> Input id="email" name="email" label="Почта" type="email" placeholder="" }}
+            {{> Input id="login" name="login" label="Логин" type="text" placeholder="" }}
+            {{> Input id="first_name" name="first_name" label="Имя" type="text" placeholder="" }}
+            {{> Input id="second_name" name="second_name" label="Фамилия" type="text" placeholder="" }}
+            {{> Input id="phone" name="phone" label="Телефон" type="tel" placeholder="" }}
+            {{> Input id="password" name="password" label="Пароль" type="password" placeholder="" }}
+            {{> Input id="password-again" name="password-again" label="Пароль (еще раз)" type="password" placeholder="" }}
+        </div>
+        <div class="container-reg__actions">
+            {{> Button name="auth" type="submit" label="Зарегестрироваться" }}
+            {{> Refs href="#" text="Нет аккаунта?" page="reg" }}
+        </div>
+    </form>
+</div>
