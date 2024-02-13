@@ -1,1 +1,143 @@
-<h1>messenger</h1>
+<div class="container-messenger">
+    <div class="container-messenger__chats">
+        <div class="container-messenger__chats_header">
+            <div class="container-messenger__chats_header_profile">
+                <a class="profile-ref" href="#">Профиль</a>
+            </div>
+            <form action="#">
+                <label for="search">
+                    <input id="search" placeholder="Поиск" type="text">
+                </label>
+            </form>
+        </div>
+        <div class="container-messenger__chats_chat-list">
+            <ul class="chat-list">
+                <li>
+                    {{> ChatItem src="" name="Ваня" my-message=true message="Привет, как дела?" time="10:47" unread-messages="" }}
+                </li>
+                <li>
+                    {{> ChatItem src="" name="Ваня" my-message=false message="Привет, как дела?" time="10:47" unread-messages="4" }}
+                </li>
+                <li>
+                    {{> ChatItem src="" name="Ваня" my-message=false message="Привет, как дела?" time="10:47" unread-messages="4" }}
+                </li>
+                <li>
+                    {{> ChatItem src="" name="Ваня" my-message=false message="Привет, как дела?" time="10:47" unread-messages="4" }}
+                </li>
+                <li>
+                    {{> ChatItem src="" name="Ваня" my-message=true message="Привет, как дела?Привет, как дела?Привет, как дела?Привет, как дела?Привет, как дела?Привет, как дела?" time="10:47" unread-messages="4" }}
+                </li>
+                <li>
+                    {{> ChatItem src="" name="Ваня" my-message=false message="Привет, как дела?Привет, как дела?Привет, как дела?Привет, как дела?Привет, как дела?" time="10:47" unread-messages="4" }}
+                </li>
+                <li>
+                    {{> ChatItem src="" name="Ваня" my-message=true message="Привет, как дела?" time="10:47" unread-messages="" }}
+                </li>
+                <li>
+                    {{> ChatItem src="" name="Ваня" my-message=true message="Привет, как дела?Привет, как дела?Привет, как дела?Привет, как дела?Привет, как дела?" time="10:47" unread-messages="4" }}
+                </li>
+                <li>
+                    {{> ChatItem src="" name="Ваня" my-message=true message="Привет, как дела?Привет, как дела?Привет, как дела?Привет, как дела?Привет, как дела?" time="10:47" unread-messages="4" }}
+                </li>
+                <li>
+                    {{> ChatItem src="" name="Ваня" my-message=true message="Привет, как дела?Привет, как дела?Привет, как дела?Привет, как дела?Привет, как дела?" time="10:47" unread-messages="4" }}
+                </li>
+                <li>
+                    {{> ChatItem src="" name="Ваня" my-message=true message="Привет, как дела?Привет, как дела?Привет, как дела?Привет, как дела?Привет, как дела?" time="10:47" unread-messages="4" }}
+                </li>
+                <li>
+                    {{> ChatItem src="" name="Ваня" my-message=true message="Привет, как дела?Привет, как дела?Привет, как дела?Привет, как дела?Привет, как дела?" time="10:47" unread-messages="4" }}
+                </li>
+                <li>
+                    {{> ChatItem src="" name="Ваня" my-message=true message="Привет, как дела?Привет, как дела?Привет, как дела?Привет, как дела?Привет, как дела?" time="10:47" unread-messages="4" }}
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="container-messenger__chat-content">
+        <div class="container-messenger__chat-content_header">
+            {{> Avatar src="" }}
+            <div class="container-messenger__chat-content_header_user-name">
+                Ваня
+            </div>
+            <div class="container-messenger__chat-content_header_actions">
+                <img src="../../static/three_dots.svg" alt="">
+            </div>
+        </div>
+        <div class="container-messenger__chat-content_messages">
+            {{> Dateline date="19 июня" }}
+            {{> Message
+                    type-person="companion"
+                    content="Привет! Смотри, тут всплыл интересный кусок лунной космической истории — НАСА в какой-то момент попросила Хассельблад адаптировать модель SWC для полетов на Луну. Сейчас мы все знаем что астронавты летали с моделью 500 EL — и к слову говоря, все тушки этих камер все еще находятся на поверхности Луны, так как астронавты с собой забрали только кассеты с пленкой. Хассельблад в итоге адаптировал SWC для космоса, но что-то пошло не так и на ракету они так никогда и не попали. Всего их было произведено 25 штук, одну из них недавно продали на аукционе за 45000 евро."
+                    time="10:48"
+            }}
+            {{>ChatImage
+                    type-person="companion"
+                    src="../../static/camera.png"
+                    time="10:59"
+            }}
+            {{>Dateline date="1 августа" }}
+            {{> Message
+                    type-person="me"
+                    content="Круто! А что еще покажешь?"
+                    time="23:00"
+            }}
+            {{> Message
+                    type-person="me"
+                    content="Круто! А что еще покажешь?"
+                    time="23:00"
+            }}
+            {{> Message
+                    type-person="me"
+                    content="Круто! А что еще покажешь?"
+                    time="23:00"
+            }}
+            {{> Message
+                    type-person="me"
+                    content="Круто! А что еще покажешь?"
+                    time="23:00"
+            }}
+            {{> Message
+                    type-person="me"
+                    content="Круто! А что еще покажешь?"
+                    time="23:00"
+            }}
+            {{> Message
+                    type-person="me"
+                    content="Круто! А что еще покажешь?"
+                    time="23:00"
+            }}
+            {{> Message
+                    type-person="me"
+                    content="Круто! А что еще покажешь?"
+                    time="23:00"
+            }}
+            {{>ChatImage
+                    type-person="me"
+                    src="../../static/camera.png"
+                    time="10:59"
+            }}
+            {{>Dateline date="1 августа" }}
+            {{> Message
+                    type-person="me"
+                    content="Круто! А что еще покажешь?"
+                    time="23:00"
+            }}
+        </div>
+        <div class="container-messenger__chat-content_footer">
+            <div class="container-messenger__chat-content_footer_paperclip">
+                <label class="label-paperclip" for="paperclip">
+                    <input class="paperclip-paperclip" id="paperclip" type="file">
+                </label>
+            </div>
+            <div class="container-messenger__chat-content_footer_input">
+                <label for="message-input">
+                    <input id="message-input" name="message" type="text" placeholder="Сообщение">
+                </label>
+            </div>
+            <div class="container-messenger__chat-content_footer_send">
+                <button class="container-messenger__chat-content_footer_send_button" type="submit"></button>
+            </div>
+        </div>
+    </div>
+</div>

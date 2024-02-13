@@ -1,0 +1,13 @@
+@import 'src/sass/variables.scss';
+
+
+.container-avatar {
+  display: flex;
+  &__avatar {
+    width: 47px;
+    height: 47px;
+    border-radius: 50%;
+    border: 1px solid $messengerDecorationColor;
+    margin: 0 10px 0 0;
+  }
+}

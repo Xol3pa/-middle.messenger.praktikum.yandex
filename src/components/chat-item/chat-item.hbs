@@ -1,0 +1,17 @@
+<div class="chat-item">
+    {{> Avatar src=src }}
+   <div class="chat-item__message">
+       <h2 class="chat-item__message_title">{{name}}</h2>
+       {{# if my-message}}
+           <p class="chat-item__message_message"><span>Вы: </span>{{message}}</p>
+       {{else}}
+           <p class="chat-item__message_message">{{message}}</p>
+       {{/if}}
+   </div>
+    <div class="chat-item__info">
+        <p class="chat-item__info_time">{{time}}</p>
+            {{#if unread-messages}}
+                {{>Num value=unread-messages}}
+            {{/if}}
+    </div>
+</div>

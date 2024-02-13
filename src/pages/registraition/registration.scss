@@ -6,7 +6,7 @@
   position: relative;
   &__reg {
     position: absolute;
-    top: 5%;
+    top: 0;
     max-width: 340px;
     border-radius: 12px;
     box-shadow: 0 0 6px 0 #00000024;
@@ -22,5 +22,8 @@
   }
   &__actions {
     margin-top: 50px;
+  }
+  input {
+    margin-bottom: 10px;
   }
 }

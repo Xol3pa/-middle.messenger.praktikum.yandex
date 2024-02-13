@@ -1,0 +1,41 @@
+@import 'src/sass/variables.scss';
+
+
+.chat-image {
+  width: 100%;
+  &__me {
+    margin-left: auto;
+    margin-right: 0;
+    img {
+      max-width: 420px;
+      border-radius: 15px;
+      border: 2px solid $hoverChatColor;
+    }
+  }
+  &__companion {
+    img {
+      max-width: 420px;
+      border-radius: 15px;
+      border: 2px solid $messengerDecorationColor;
+    }
+    margin-left: 0;
+    margin-right: auto;
+  }
+  &__block {
+    position: relative;
+    max-width: 420px;
+    &_time {
+      position: absolute;
+      bottom: 15px;
+      right: 10px;
+      color: white;
+      padding: 4px 9px 2px;
+      background: $imageTimeColorDecoration;
+      border-radius: 10px;
+      font-size: 10px;
+      font-weight: 500;
+      line-height: 10px;
+      text-align: center;
+    }
+  }
+}
