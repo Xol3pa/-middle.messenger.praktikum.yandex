@@ -23,3 +23,4 @@ NETLIFY КАК ПЛАТФОРМА ДЛЯ ХОСТИНГА ПРОЕКТА
 npm run dev
 npm run build
 npm run starts
+
