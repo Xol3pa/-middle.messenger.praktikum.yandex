@@ -1,0 +1,18 @@
+@import 'src/sass/variables.scss';
+
+
+.data-field {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 10px 0;
+  border-bottom: 2px solid $messengerDecorationColor;
+  &__key {
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  &__value {
+    color: $colorSubText;
+    margin-bottom: 10px;
+  }
+}

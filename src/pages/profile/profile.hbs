@@ -1,0 +1,26 @@
+<div class="container-profile">
+    <div class="container-profile__back">
+        <a href="#" page="messenger" class="container-profile__back__button"></a>
+    </div>
+    <div class="container-profile__main">
+        <div class="profile__header">
+            <label for="avatar" class="profile__header__avatar-label">
+                <input id="avatar" class="profile__header__avatar" type="file">
+            </label>
+            <h2 class="profile__header__title">Ваня</h2>
+        </div>
+        <div class="profile__data-fields">
+            {{> DataField key="Почта" value="vang.pva@mail.ru" }}
+            {{> DataField key="Логин" value="ivanivanov" }}
+            {{> DataField key="Имя" value="Иван" }}
+            {{> DataField key="Фамилия" value="Иванов" }}
+            {{> DataField key="Имя в чате" value="Иван" }}
+            {{> DataField key="Телефон" value="+7 (909) 967 30 30" }}
+        </div>
+        <div class="profile__actions">
+            {{> DataButton href="#" class="change" page="change-profile" textButton="Изменить данные" }}
+            {{> DataButton href="#" class="change" page="change-pass" textButton="Изменить пароль" }}
+            {{> DataButton href="#" class="exit" page="auth" textButton="Выйти" }}
+        </div>
+    </div>
+</div>

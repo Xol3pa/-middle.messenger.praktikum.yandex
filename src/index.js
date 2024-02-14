@@ -1,6 +1,7 @@
 import Handlebars from 'handlebars';
 import * as Components from './components';
 import * as Pages from './pages';
+import {ProfilePage} from "./pages";
 
 
 Object.entries(Components).forEach(([name, template]) => {
@@ -11,6 +12,9 @@ const pages = {
     'messenger': Pages.MessengerPage,
     'auth': Pages.AuthPage,
     'reg': Pages.RegPage,
+    'profile': Pages.ProfilePage,
+    '500': Pages.Page500,
+    '404': Pages.Page404,
 }
 
 function navigate(page) {

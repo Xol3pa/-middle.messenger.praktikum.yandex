@@ -8,3 +8,6 @@ export { Dateline } from './datelline/dateline';
 export { Message } from './message/message';
 export { ChatImage } from './chat-image/chat-image';
 export { DepartureTime } from './departure-time/departure-time';
+export { DataField } from './datafield/datafield';
+export { DataButton } from './databutton/databutton';
+export { Error } from './error/error';

@@ -9,11 +9,14 @@
   padding: 0;
   width: 100%;
   &__chats {
+    display: flex;
+    flex-direction: column;
     min-width: 310px;
-    width: 20%;
     height: 100vh;
+    width: 20%;
     border-right: 2px solid $messengerDecorationColor;
     &_chat-list {
+      height: 100vh;
       overflow-y: scroll;
       overflow-x: hidden;
       display: block;
@@ -51,11 +54,6 @@
       display: block;
       padding-right: 20px;
     }
-    ::-webkit-scrollbar-thumb {
-      background-color: blue;
-      border-radius: 432px;
-      border: 1px solid orange;
-    }
     &_footer {
       width: 100%;
       display: inline-flex;
@@ -63,6 +61,7 @@
       justify-content: center;
       align-items: center;
       padding-top: 10px;
+      padding-right: 15px;
       border-top: 2px solid $messengerDecorationColor;
       &_paperclip {
         justify-content: center;
