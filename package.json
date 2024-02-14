@@ -7,8 +7,8 @@
   },
   "scripts": {
     "dev": "vite --force -d --open",
-    "build": "vite build",
-    "preview": "vite preview"
+    "build": "vite build --emptyOutDir",
+    "start": "vite build --emptyOutDir && node server.js"
   },
   "type": "module",
   "engines": {

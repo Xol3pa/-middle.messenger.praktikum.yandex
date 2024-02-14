@@ -30,6 +30,9 @@
   &__main {
     max-width: 510px;
     height: 100vh;
+    .profile__data-fields {
+      margin-bottom: 50px;
+    }
     .profile__header {
       width: 510px;
       margin-bottom: 80px;
