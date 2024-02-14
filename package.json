@@ -1,0 +1,19 @@
+{
+  "devDependencies": {
+    "vite": "^5.1.0"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "handlebars": "^4.7.8",
+    "sass": "^1.70.0"
+  },
+  "scripts": {
+    "dev": "vite --force -d --open",
+    "build": "vite build --emptyOutDir",
+    "start": "vite build --emptyOutDir && node server.js"
+  },
+  "type": "module",
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}

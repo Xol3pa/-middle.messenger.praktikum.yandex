@@ -1,0 +1,154 @@
+@import 'src/sass/variables.scss';
+
+
+.container-messenger {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  &__chats {
+    display: flex;
+    flex-direction: column;
+    min-width: 310px;
+    height: 100vh;
+    width: 20%;
+    border-right: 2px solid $messengerDecorationColor;
+    &_chat-list {
+      height: 100vh;
+      overflow-y: scroll;
+      overflow-x: hidden;
+      display: block;
+    }
+
+  }
+  &__chat-content {
+    width: 80%;
+    height: 100vh;
+    padding: 10px 0 10px 20px;
+    display: flex;
+    flex-direction: column;
+    &_header {
+      display: inline-flex;
+      flex-direction: row;
+      height: 60px;
+      align-items: center;
+      padding-bottom: 10px;
+      border-bottom: 2px solid $messengerDecorationColor;
+      &_user-name {
+        flex-grow: 1;
+        color: $titleColor;
+        font-weight: 700;
+        font-size: 13px;
+      }
+      &_actions {
+        width: 30px;
+        height: 30px;
+        align-self: center;
+      }
+    }
+    &_messages {
+      overflow-y: scroll;
+      overflow-x: hidden;
+      display: block;
+      padding-right: 20px;
+    }
+    &_footer {
+      width: 100%;
+      display: inline-flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      padding-top: 10px;
+      padding-right: 15px;
+      border-top: 2px solid $messengerDecorationColor;
+      &_paperclip {
+        justify-content: center;
+        align-items: center;
+        align-self: center;
+        .label-paperclip {
+          display: block;
+          width: 34px;
+          height: 34px;
+          margin-right: 10px;
+          cursor: pointer;
+          background: url("../../static/paperclip.svg") center center no-repeat;
+        }
+        .paperclip-paperclip {
+          display: none;
+        }
+      }
+      &_input {
+        flex-grow: 1;
+        #message-input {
+          color: $colorSubText;
+          font-size: 12px;
+          align-self: center;
+          width: 100%;
+          height: 32px;
+          padding: 0 20px;
+          border: 0;
+          border-radius: 16px;
+          background-color: $messengerDecorationColor;
+          outline: none;
+        }
+      }
+      &_send {
+        display: flex;
+        &_button {
+          align-self: center;
+          content: '';
+          height: 34px;
+          width: 34px;
+          margin-left: 10px;
+          border: none;
+          border-radius: 50%;
+          fill: white;
+          background: $mainColorDecoration url("../../static/arrow_right_button.svg") center center no-repeat;
+        }
+
+      }
+    }
+  }
+  &__chats_header {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 10px;
+    label {
+      width: 100%;
+    }
+    input {
+      display: flex;
+      width: 100%;
+      padding: 9px 0;
+      border: none;
+      font-size: 13px;
+      color: $colorSubText;
+      text-align: center;
+      border-radius: 6px;
+      background-color: #EFEFEF;
+    }
+    &_profile {
+      .profile-ref {
+        padding: 10px 0;
+        font-size: 14px;
+        color: $colorSubText;
+        text-decoration: none;
+        float: right;
+        min-height: 20px;
+        &::after {
+          content: '';
+          display: inline-block;
+          height: 20px;
+          width: 20px;
+          vertical-align: middle;
+          fill: $colorSubText;
+          background: url("../../static/arrow-right.svg") center center no-repeat;
+          background-size: 12px;
+        }
+      }
+    }
+  }
+}

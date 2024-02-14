@@ -1,0 +1,11 @@
+@import 'src/sass/variables.scss';
+
+
+.container-error {
+  display: flex;
+  width: 100%;
+  height: 90vh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}

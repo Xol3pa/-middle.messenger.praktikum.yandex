@@ -1,0 +1,15 @@
+<div class="container-login">
+    <form action="#" class="container-login__login">
+        <div class="container-login__title">
+            <h1>Вход</h1>
+        </div>
+        <div class="container-login__inputs">
+            {{> Input id="login" name="login" label="Логин" type="text" placeholder="" }}
+            {{> Input id="password" name="password" label="Пароль" type="password" placeholder="" }}
+        </div>
+        <div class="container-login__actions">
+            {{> Button classname="action" name="auth" type="submit" label="Войти" page="messenger" }}
+            {{> Refs href="#" text="Нет аккаунта?" page="reg" }}
+        </div>
+    </form>
+</div>

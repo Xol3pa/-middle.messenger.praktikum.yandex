@@ -1,0 +1,18 @@
+@import 'src/sass/variables.scss';
+
+.time {
+  position: absolute;
+  display: inline-block;
+  bottom: 6px;
+  right: 7px;
+  font-size: 9px;
+  font-weight: 500;
+  line-height: 9px;
+  text-align: right;
+  &__companion {
+    color: $colorSubText;
+  }
+  &__me {
+    color: $mainColorDecoration;
+  }
+}
