@@ -10,16 +10,16 @@
             <h2 class="profile__header__title">Ваня</h2>
         </div>
         <div class="profile__data-fields">
-            {{> DataField key="Почта" value="vang.pva@mail.ru" }}
-            {{> DataField key="Логин" value="ivanivanov" }}
-            {{> DataField key="Имя" value="Иван" }}
-            {{> DataField key="Фамилия" value="Иванов" }}
-            {{> DataField key="Имя в чате" value="Иван" }}
-            {{> DataField key="Телефон" value="+7 (909) 967 30 30" }}
+            {{> DataField change="" name="" key="Почта" value="vang.pva@mail.ru" type="text"}}
+            {{> DataField change="" name="" key="Логин" value="ivanivanov" type="text"}}
+            {{> DataField change="" name="" key="Имя" value="Иван" type="text"}}
+            {{> DataField change="" name="" key="Фамилия" value="Иванов" type="text"}}
+            {{> DataField change="" name="" key="Имя в чате" value="Иван" type="text"}}
+            {{> DataField change="" name="" key="Телефон" value="+7 (909) 967 30 30" type="text"}}
         </div>
         <div class="profile__actions">
             {{> DataButton href="#" class="change" page="change-profile" textButton="Изменить данные" }}
-            {{> DataButton href="#" class="change" page="change-pass" textButton="Изменить пароль" }}
+            {{> DataButton href="#" class="change" page="change-password" textButton="Изменить пароль" }}
             {{> DataButton href="#" class="exit" page="auth" textButton="Выйти" }}
         </div>
     </div>

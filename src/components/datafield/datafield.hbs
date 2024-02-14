@@ -2,7 +2,13 @@
     <div class="data-field__key">
         {{key}}
     </div>
-    <div class="data-field__value">
-        {{value}}
-    </div>
+    {{#if change }}
+        <label class="change-data" for="change-data">
+            <input id="change-data" class="change-data__input" placeholder="{{value}}" name="{{name}}" type="{{type}}">
+        </label>
+    {{else}}
+        <div class="data-field__value">
+            {{value}}
+        </div>
+    {{/if}}
 </div>

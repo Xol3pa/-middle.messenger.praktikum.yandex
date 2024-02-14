@@ -14,6 +14,8 @@ const pages = {
     'auth': Pages.AuthPage,
     'reg': Pages.RegPage,
     'profile': Pages.ProfilePage,
+    'change-profile': Pages.ChangeProfilePage,
+    'change-password': Pages.ChangePasswordPage,
     '500': Pages.Page500,
     '404': Pages.Page404,
 }

@@ -1,0 +1,61 @@
+@import 'src/sass/variables.scss';
+
+
+
+.container-change-profile__back {
+  display: flex;
+  justify-content: center;
+  width: 64px;
+  height: 100vh;
+  position: absolute;
+  left: 0;
+  border-right: 2px solid $messengerDecorationColor;
+
+  &__button {
+    content: '';
+    align-self: center;
+    height: 34px;
+    width: 34px;
+    border: none;
+    border-radius: 50%;
+    fill: white;
+    background: $mainColorDecoration url("../../static/arrow-back.svg") center center no-repeat;
+  }
+}
+.container-change-profile {
+  max-width: 510px;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  &__main {
+    min-width: 510px;
+    height: 100vh;
+    .change-profile__data-fields {
+      margin-bottom: 50px;
+    }
+    .change-profile__header {
+      width: 510px;
+      margin: 100px 0 80px 0;
+      &__avatar-label {
+        display: block;
+        margin: 40px auto 15px auto;
+        width: 130px;
+        height: 130px;
+        cursor: pointer;
+        border-radius: 50%;
+        border: 2px solid $messengerDecorationColor;
+        background: url("../../static/avatar.svg") center center no-repeat;
+      }
+      &__avatar {
+        display: none;
+      }
+    }
+    .change-profile__action {
+      width: 200px;
+      height: 40px;
+      margin: 50px auto 0 auto;
+    }
+  }
+}

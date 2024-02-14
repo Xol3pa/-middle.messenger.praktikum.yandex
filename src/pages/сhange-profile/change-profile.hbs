@@ -1,0 +1,23 @@
+<div class="container-change-profile__back">
+    <a href="#" page="profile" class="container-change-profile__back__button"></a>
+</div>
+<form action="#" class="container-change-profile">
+    <div class="container-change-profile__main">
+        <div class="change-profile__header">
+            <label for="avatar" class="change-profile__header__avatar-label">
+                <input id="avatar" name="avatar" class="change-profile__header__avatar" type="file">
+            </label>
+        </div>
+        <div class="profile__data-fields">
+            {{> DataField change="true" name="email" key="Почта" value="vang.pva@mail.ru" type="text"}}
+            {{> DataField change="true" name="login" key="Логин" value="ivanivanov" type="text"}}
+            {{> DataField change="true" name="first_name" key="Имя" value="Иван" type="text"}}
+            {{> DataField change="true" name="second_name" key="Фамилия" value="Иванов" type="text"}}
+            {{> DataField change="true" name="display_name" key="Имя в чате" value="Иван" type="text"}}
+            {{> DataField change="true" name="phone" key="Телефон" value="+7 (909) 967 30 30" type="text"}}
+        </div>
+        <div class="change-profile__actions">
+           {{> Button classname="action" type="submit" page="profile" label="Сохранить"}}
+        </div>
+    </div>
+</form>
