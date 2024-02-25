@@ -1,6 +1,11 @@
 {
   "devDependencies": {
     "@types/node": "^20.11.20",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-airbnb-typescript": "^17.1.0",
+    "stylelint-scss": "^6.1.0",
     "typescript": "^5.3.3",
     "vite": "^5.1.0"
   },
@@ -12,7 +17,9 @@
   "scripts": {
     "dev": "vite --force -d --open",
     "build": "vite build --emptyOutDir",
-    "start": "vite build --emptyOutDir && node server.js"
+    "start": "vite build --emptyOutDir && node server.js",
+    "type-check": "tsc --noEmit",
+    "eslint": "eslint .\\src "
   },
   "type": "module",
   "engines": {
